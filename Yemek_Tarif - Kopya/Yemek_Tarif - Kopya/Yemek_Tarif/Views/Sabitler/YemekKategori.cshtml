@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Yemek_Tarif.Models.tbl_Kategoriler>
+@*@model Yemek_Tarif.Models.tbl_Kategoriler*@
+
+@*@model Kategori*@
+@{
+    /**/
+
+    ViewBag.Title = "YemekKategori";
+    Layout = "~/Views/shared/_layout.cshtml";
+}
+<section class="page-title" style="background-image:url(/images/background/10.jpg)">
+    <div class="auto-container">
+        <h1>Kategoriler</h1>
+    </div>
+</section>
+<section class="categories-section">
+    <div class="auto-container">
+
+        <!-- Sec Title -->
+
+        <div class="sec-title centered">
+            <h2> Kategoriler </h2>
+            <div class="text">İstediğiniz Kategoriye Ait Yemek Tariflerini Buradan Kolaylıkla Bulabilirsiniz</div>
+        </div>
+
+        <!-- Categories Tabs -->
+        <div class="categories-tab">
+
+            <div class="tab-btns-box">
+                <!--Tabs Header-->
+
+                <div class="tabs-header">
+                    <div class="row clearfix">
+
+                        <!-- Entertaining Block -->
+                        @foreach (var item in Model)
+                        {<div class="entertaining-block col-lg-3 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <div class="image">
+                                    </div>
+                                    <div class="lower-content">
+
+                                        <h4><a href="/Sabitler/YemekKategoriDetay/@item.Kategoriid"><b><i>@item.KategoriAd</i></b></a></h4>
+                                        <a href="/Sabitler/YemekKategoriDetay/@item.Kategoriid" class="theme-btn read-more"><b>Kategoriye Git</b></a>
+                                    </div>
+                                </div>
+                            </div>}
+
+                        <!-- Entertaining Block -->
+                        <!-- Entertaining Block -->
+                        <!-- Entertaining Block -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Tabs Content -->
+        </div>
+    </div>
+</section>
+
+
+

@@ -1,0 +1,106 @@
+﻿@*@model IEnumerable<Yemek_Tarif.Models.tbl_Kategoriler>*@
+
+@model Yemek_Tarif.Models.tbl_Yemekler
+@*@model Kategori*@
+
+@{
+    /**/
+
+    /**/
+
+    ViewBag.Title = "YemekEkle";
+    Layout = "~/Views/shared/_layout.cshtml";
+
+
+}
+
+
+
+<section class="page-title" style="background-image:url(/images/background/10.jpg)">
+    <div class="auto-container">
+
+        <h1>Tarifler</h1>
+    </div>
+</section>
+<section class="add-recipe-area">
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-lg-12">
+
+                <div class="add-recipe-col">
+                    <h4>Yemek tarifi göndermek için lütfen bütün alanları doldurun</h4>
+
+                    <form action="/Sabitler/YemekEkle" method="post">
+                        <div class="form-group mb-4">
+                            <label>Yemek Adı</label>
+                            <input type="text" class="form-control" name="YemekAd" placeholder="Örnek: Kremalı Patates" required="">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label>Yemek Tarif</label>
+                            <textarea class="form-control" name="YemekTarif" id="exampleFormControlTextarea1" rows="4" placeholder="Buraya yazınız..." required=""></textarea>
+                        </div>
+                        <label> Kategori Seçiniz...</label>
+                        <div class="form-group mb-4">
+                            @Html.DropDownListFor(m => m.tbl_Kategoriler.Kategoriid, (List<SelectListItem>)ViewBag.dgr, new { @class = "form-control" })
+                        </div>
+                        @*<div class="form-group mb-4">
+
+            <label>Bir Resim Ekle</label>
+            <input type="file" name="YemekResim" class="form-control-file">
+        </div>*@
+
+
+
+
+                        @*<div class="form-group mb-4">
+            <label>Etiketler</label>
+            <input type="text" class="form-control" placeholder="Example: Pizza, Burger, Fried Rice">
+        </div>*@
+                        <div class="form-group mb-4">
+                            <label>Malzeme Miktarı</label>
+                            <input type="text" class="form-control" name="YemekMalzeme">
+                        </div>
+                        @*<div class="form-group mb-4">
+            <label>Video Link</label>
+            <input type="text" class="form-control" placeholder="For example: https://www.youtube.com/embed/sv3TXMSv6Lw">
+        </div>*@
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mb-4">
+                                    @*<label>Add Directions</label>*@
+                                    <div class="loadmore load-more">
+                                        @*<textarea class="form-control load-item load-more__item" id="exampleFormControlTextarea1" rows="3" placeholder="Buraya yazınız..."></textarea>*@
+                                        @*<textarea class="form-control load-item load-more__item" id="exampleFormControlTextarea1" rows="3" placeholder="Write Here..." style="display: none;"></textarea>*@
+
+                                        @*<a href="#" class="load-more__btn">Add Field</a>*@
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="btn btn-primary theme-btn btn-style-one" type="submit"><span>Tarif Gönder</span></button>
+                        @if (ViewBag.sonuc == 1)
+                        {
+                            <div class="alert alert-success" role="alert">
+                                Tebrikler Bir Kayıt Eklediniz.!
+                            </div>
+                        }
+                        else if (ViewBag.sonuc == 0)
+                        {
+
+                            <div class="alert alert-secondary" role="alert">
+                                Bir Sorun Var.!
+                            </div>
+                        }
+
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

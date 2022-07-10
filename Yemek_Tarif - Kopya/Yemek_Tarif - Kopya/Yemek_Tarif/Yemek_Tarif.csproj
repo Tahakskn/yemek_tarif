@@ -1,0 +1,469 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF39B672-76FD-4157-9A22-CC8F7094FCB6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Yemek_Tarif</RootNamespace>
+    <AssemblyName>Yemek_Tarif</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="images\batırık %281%29.jpg" />
+    <Content Include="Models\ModelTables.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelTables.edmx</DependentUpon>
+      <LastGenOutput>ModelTables.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ModelTables.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelTables.edmx</DependentUpon>
+      <LastGenOutput>ModelTables.cs</LastGenOutput>
+    </Content>
+    <Content Include="script\csss\bootstrap-grid.css" />
+    <Content Include="script\csss\bootstrap-grid.min.css" />
+    <Content Include="script\csss\bootstrap-grid.rtl.css" />
+    <Content Include="script\csss\bootstrap-grid.rtl.min.css" />
+    <Content Include="script\csss\bootstrap-reboot.css" />
+    <Content Include="script\csss\bootstrap-reboot.min.css" />
+    <Content Include="script\csss\bootstrap-reboot.rtl.css" />
+    <Content Include="script\csss\bootstrap-reboot.rtl.min.css" />
+    <Content Include="script\csss\bootstrap-utilities.css" />
+    <Content Include="script\csss\bootstrap-utilities.min.css" />
+    <Content Include="script\csss\bootstrap-utilities.rtl.css" />
+    <Content Include="script\csss\bootstrap-utilities.rtl.min.css" />
+    <Content Include="script\csss\bootstrap.css" />
+    <Content Include="script\csss\bootstrap.min.css" />
+    <Content Include="script\csss\bootstrap.rtl.css" />
+    <Content Include="script\csss\bootstrap.rtl.min.css" />
+    <Content Include="script\css\animate.css" />
+    <Content Include="script\css\animation.css" />
+    <Content Include="script\css\bootstrap.css" />
+    <Content Include="script\css\flaticon.css" />
+    <Content Include="script\css\font-awesome.css" />
+    <Content Include="script\css\images\ui-icons_444444_256x240.png" />
+    <Content Include="script\css\images\ui-icons_777620_256x240.html" />
+    <Content Include="script\css\images\ui-icons_777777_256x240.html" />
+    <Content Include="script\css\images\ui-icons_cc0000_256x240.html" />
+    <Content Include="script\css\jquery-ui.css" />
+    <Content Include="script\css\jquery.fancybox.min.css" />
+    <Content Include="script\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="script\css\main.css" />
+    <Content Include="script\css\mCSB_buttons.html" />
+    <Content Include="script\css\owl.css" />
+    <Content Include="script\css\owl.video.play.html" />
+    <Content Include="script\css\responsive.css" />
+    <Content Include="script\fonts\flaticon.html" />
+    <Content Include="script\fonts\fontawesome-webfont914c.svg" />
+    <Content Include="images\background\1.png" />
+    <Content Include="images\background\10.jpg" />
+    <Content Include="images\background\11.jpg" />
+    <Content Include="images\background\12.png" />
+    <Content Include="images\background\13.png" />
+    <Content Include="images\background\14.jpg" />
+    <Content Include="images\background\15.html" />
+    <Content Include="images\background\16.png" />
+    <Content Include="images\background\17.png" />
+    <Content Include="images\background\18.png" />
+    <Content Include="images\background\19.png" />
+    <Content Include="images\background\2.jpg" />
+    <Content Include="images\background\20.png" />
+    <Content Include="images\background\21.png" />
+    <Content Include="images\background\3.png" />
+    <Content Include="images\background\4.png" />
+    <Content Include="images\background\5.png" />
+    <Content Include="images\background\6.jpg" />
+    <Content Include="images\background\7.png" />
+    <Content Include="images\background\8.png" />
+    <Content Include="images\background\9.png" />
+    <Content Include="images\clients\1.png" />
+    <Content Include="images\clients\2.png" />
+    <Content Include="images\clients\3.png" />
+    <Content Include="images\clients\4.png" />
+    <Content Include="images\clients\5.png" />
+    <Content Include="images\favicon.png" />
+    <Content Include="images\footer-logo.png" />
+    <Content Include="images\icons\category-bg.png" />
+    <Content Include="images\icons\category-icon-1.png" />
+    <Content Include="images\icons\category-icon.png" />
+    <Content Include="images\icons\map.png" />
+    <Content Include="images\icons\next-arrow.png" />
+    <Content Include="images\icons\preloader.svg" />
+    <Content Include="images\icons\prev-arrow.png" />
+    <Content Include="images\icons\year.png" />
+    <Content Include="images\logo-2.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\main-slider\1.jpg" />
+    <Content Include="images\resource\about.png" />
+    <Content Include="images\resource\author-1.jpg" />
+    <Content Include="images\resource\author-10.jpg" />
+    <Content Include="images\resource\author-11.jpg" />
+    <Content Include="images\resource\author-12.jpg" />
+    <Content Include="images\resource\author-13.jpg" />
+    <Content Include="images\resource\author-15.jpg" />
+    <Content Include="images\resource\author-16.jpg" />
+    <Content Include="images\resource\author-17.jpg" />
+    <Content Include="images\resource\author-18.jpg" />
+    <Content Include="images\resource\author-19.jpg" />
+    <Content Include="images\resource\author-2.jpg" />
+    <Content Include="images\resource\author-20.jpg" />
+    <Content Include="images\resource\author-21.jpg" />
+    <Content Include="images\resource\author-22.jpg" />
+    <Content Include="images\resource\author-3.jpg" />
+    <Content Include="images\resource\author-4.jpg" />
+    <Content Include="images\resource\author-5.jpg" />
+    <Content Include="images\resource\author-6.jpg" />
+    <Content Include="images\resource\author-7.jpg" />
+    <Content Include="images\resource\author-8.jpg" />
+    <Content Include="images\resource\author-9.jpg" />
+    <Content Include="images\resource\big.jpg" />
+    <Content Include="images\resource\cat-1.png" />
+    <Content Include="images\resource\cat-2.png" />
+    <Content Include="images\resource\cat-3.png" />
+    <Content Include="images\resource\category-1.png" />
+    <Content Include="images\resource\category-2.png" />
+    <Content Include="images\resource\category-3.png" />
+    <Content Include="images\resource\category-4.png" />
+    <Content Include="images\resource\category-5.png" />
+    <Content Include="images\resource\category-6.png" />
+    <Content Include="images\resource\category-pattern-1.png" />
+    <Content Include="images\resource\category.png" />
+    <Content Include="images\resource\contact.jpg" />
+    <Content Include="images\resource\discription.jpg" />
+    <Content Include="images\resource\entertaining-1.jpg" />
+    <Content Include="images\resource\entertaining-2.jpg" />
+    <Content Include="images\resource\entertaining-3.jpg" />
+    <Content Include="images\resource\entertaining-4.jpg" />
+    <Content Include="images\resource\entertaining-5.jpg" />
+    <Content Include="images\resource\entertaining-6.jpg" />
+    <Content Include="images\resource\entertaining-7.jpg" />
+    <Content Include="images\resource\entertaining-8.jpg" />
+    <Content Include="images\resource\founder.jpg" />
+    <Content Include="images\resource\image-1.png" />
+    <Content Include="images\resource\instagram-1.jpg" />
+    <Content Include="images\resource\instagram-2.jpg" />
+    <Content Include="images\resource\instagram-3.jpg" />
+    <Content Include="images\resource\instagram-4.jpg" />
+    <Content Include="images\resource\instagram-5.jpg" />
+    <Content Include="images\resource\instagram-6.jpg" />
+    <Content Include="images\resource\login.jpg" />
+    <Content Include="images\resource\news-1.jpg" />
+    <Content Include="images\resource\news-2.jpg" />
+    <Content Include="images\resource\news-3.jpg" />
+    <Content Include="images\resource\news-4.jpg" />
+    <Content Include="images\resource\news-5.png" />
+    <Content Include="images\resource\news-6.jpg" />
+    <Content Include="images\resource\news-7.jpg" />
+    <Content Include="images\resource\post-1.jpg" />
+    <Content Include="images\resource\post-2.jpg" />
+    <Content Include="images\resource\post-3.jpg" />
+    <Content Include="images\resource\post-4.jpg" />
+    <Content Include="images\resource\post-5.jpg" />
+    <Content Include="images\resource\recipe-1.jpg" />
+    <Content Include="images\resource\recipe-10.jpg" />
+    <Content Include="images\resource\recipe-11.jpg" />
+    <Content Include="images\resource\recipe-12.jpg" />
+    <Content Include="images\resource\recipe-13.jpg" />
+    <Content Include="images\resource\recipe-14.jpg" />
+    <Content Include="images\resource\recipe-15.jpg" />
+    <Content Include="images\resource\recipe-16.jpg" />
+    <Content Include="images\resource\recipe-17.jpg" />
+    <Content Include="images\resource\recipe-18.jpg" />
+    <Content Include="images\resource\recipe-19.jpg" />
+    <Content Include="images\resource\recipe-2.jpg" />
+    <Content Include="images\resource\recipe-20.jpg" />
+    <Content Include="images\resource\recipe-21.jpg" />
+    <Content Include="images\resource\recipe-22.jpg" />
+    <Content Include="images\resource\recipe-23.jpg" />
+    <Content Include="images\resource\recipe-24.jpg" />
+    <Content Include="images\resource\recipe-25.jpg" />
+    <Content Include="images\resource\recipe-3.jpg" />
+    <Content Include="images\resource\recipe-4.jpg" />
+    <Content Include="images\resource\recipe-5.jpg" />
+    <Content Include="images\resource\recipe-6.jpg" />
+    <Content Include="images\resource\recipe-7.jpg" />
+    <Content Include="images\resource\recipe-8.jpg" />
+    <Content Include="images\resource\recipe-9.jpg" />
+    <Content Include="images\resource\shape.jpg" />
+    <Content Include="images\resource\treat-1.jpg" />
+    <Content Include="images\resource\treat-2.jpg" />
+    <Content Include="images\resource\treat-3.jpg" />
+    <Content Include="images\resource\treat-4.jpg" />
+    <Content Include="images\resource\video-1.jpg" />
+    <Content Include="images\resource\video-2.jpg" />
+    <Content Include="images\resource\video-3.jpg" />
+    <Content Include="images\resource\video-4.jpg" />
+    <Content Include="images\resource\video-5.jpg" />
+    <Content Include="images\resource\video-6.jpg" />
+    <Content Include="images\resource\video-7.jpg" />
+    <Content Include="images\resource\video-8.jpg" />
+    <Content Include="images\resource\video-9.jpg" />
+    <Content Include="images\resource\video.jpg" />
+    <Content Include="script\jss\bootstrap.bundle.js" />
+    <Content Include="script\jss\bootstrap.bundle.min.js" />
+    <Content Include="script\jss\bootstrap.esm.js" />
+    <Content Include="script\jss\bootstrap.esm.min.js" />
+    <Content Include="script\jss\bootstrap.js" />
+    <Content Include="script\jss\bootstrap.min.js" />
+    <Content Include="script\js\appear.js" />
+    <Content Include="script\js\bootstrap.min.js" />
+    <Content Include="script\js\jquery-ui.js" />
+    <Content Include="script\js\jquery.fancybox.js" />
+    <Content Include="script\js\jquery.js" />
+    <Content Include="script\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="script\js\jquery.simpleLoadMore.min.js" />
+    <Content Include="script\js\owl.js" />
+    <Content Include="script\js\popper.min.js" />
+    <Content Include="script\js\script.js" />
+    <Content Include="script\js\validate.js" />
+    <Content Include="script\js\wow.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\SabitlerController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Kategori.cs" />
+    <Compile Include="Models\ModelTables.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTables.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModelTables.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTables.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModelTables.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTables.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>ModelTables.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_GununYemegi.cs">
+      <DependentUpon>ModelTables.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_Kategoriler.cs">
+      <DependentUpon>ModelTables.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_kullanicilar.cs">
+      <DependentUpon>ModelTables.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_Tarifler.cs">
+      <DependentUpon>ModelTables.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_Yemekler.cs">
+      <DependentUpon>ModelTables.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_Yorumlar.cs">
+      <DependentUpon>ModelTables.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_Yönetici.cs">
+      <DependentUpon>ModelTables.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <EntityDeploy Include="Models\ModelTables.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelTables.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ModelTables.edmx.diagram">
+      <DependentUpon>ModelTables.edmx</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="Views\shared\_layout.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="script\fonts\flaticon.eot" />
+    <Content Include="script\fonts\flaticon.ttf" />
+    <Content Include="script\fonts\flaticon.woff" />
+    <Content Include="script\fonts\flaticond41d.eot" />
+    <Content Include="script\fonts\fontawesome-webfont914c.eot" />
+    <Content Include="script\fonts\fontawesome-webfont914c.ttf" />
+    <Content Include="script\fonts\fontawesome-webfont914c.woff" />
+    <Content Include="script\fonts\fontawesome-webfont914c.woff2" />
+    <Content Include="script\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Views\Default\Hakkımızda.cshtml" />
+    <Content Include="Views\Default\Tarifler.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="script\csss\bootstrap-grid.css.map" />
+    <Content Include="script\csss\bootstrap-grid.min.css.map" />
+    <Content Include="script\csss\bootstrap-grid.rtl.css.map" />
+    <Content Include="script\csss\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="script\csss\bootstrap-reboot.css.map" />
+    <Content Include="script\csss\bootstrap-reboot.min.css.map" />
+    <Content Include="script\csss\bootstrap-reboot.rtl.css.map" />
+    <Content Include="script\csss\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="script\csss\bootstrap-utilities.css.map" />
+    <Content Include="script\csss\bootstrap-utilities.min.css.map" />
+    <Content Include="script\csss\bootstrap-utilities.rtl.css.map" />
+    <Content Include="script\csss\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="script\csss\bootstrap.css.map" />
+    <Content Include="script\csss\bootstrap.min.css.map" />
+    <Content Include="script\csss\bootstrap.rtl.css.map" />
+    <Content Include="script\csss\bootstrap.rtl.min.css.map" />
+    <Content Include="script\jss\bootstrap.bundle.js.map" />
+    <Content Include="script\jss\bootstrap.bundle.min.js.map" />
+    <Content Include="script\jss\bootstrap.esm.js.map" />
+    <Content Include="script\jss\bootstrap.esm.min.js.map" />
+    <Content Include="script\jss\bootstrap.js.map" />
+    <Content Include="script\jss\bootstrap.min.js.map" />
+    <Content Include="Views\Sabitler\Yemekler.cshtml" />
+    <Content Include="Views\Sabitler\YemekEkle.cshtml" />
+    <Content Include="Views\Sabitler\Admin.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Sabitler\YemekGuncelle.cshtml" />
+    <Content Include="Views\Sabitler\YemekDetay.cshtml" />
+    <Content Include="Views\Sabitler\ResimEkle.cshtml" />
+    <Content Include="Views\Sabitler\YemekKategori.cshtml" />
+    <Content Include="Views\Sabitler\YemekKategoriDetay.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="images\resim\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51349</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51349/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

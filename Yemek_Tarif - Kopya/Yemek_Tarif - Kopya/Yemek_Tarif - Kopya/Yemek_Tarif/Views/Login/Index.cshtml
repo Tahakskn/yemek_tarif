@@ -1,0 +1,100 @@
+﻿
+@{
+    /**/
+
+    ViewBag.Title = "Index";
+    Layout = "~/Views/shared/_layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- Main Header-->
+        <!--End Main Header -->
+        <!-- Page Title -->
+        <section class="page-title" style="background-image:url(/images/background/17.png)">
+            <div class="auto-container">
+                <h1>Giriş Yap</h1>
+            </div>
+        </section>
+        <!-- End Page Title -->
+        <!-- Login Container -->
+        <div class="login-container margin">
+            <div class="top-layer" style="background-image:url(/images/background/20.png)"></div>
+            <div class="bottom-layer" style="background-image:url(/images/background/21.png)"></div>
+            <div class="auto-container">
+                <div class="inner-container">
+
+                    <div class="image">
+                        <img src="/images/resource/login.jpg" alt="" />
+
+                        <!-- Login Form -->
+                        <div class="login-form">
+                            <div class="pattern-layer" style="background-image:url(/images/background/18.png)"></div>
+                            <div class="pattern-layer-2" style="background-image:url(/images/background/19.png)"></div>
+
+
+                            <!-- Register Form -->
+                            <form method="post" >
+
+                                <div class="form-group">
+                                    <input type="text" name="username" placeholder="Kullanıcı Adı" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" name="Pass" placeholder="Şifre" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="check-box"><input type="checkbox" name="shipping-option" id="account-option"> &ensp; <label for="account-option">Beni hatırla</label> <a href="#">Şifrenizi mi unuttunuz?</a></div>
+
+                                </div>
+                                @if (ViewBag.hata != null && ViewBag.hata != "")
+                                {
+
+
+
+                                    <div class="alert alert-warning" role="alert">
+                                        @ViewBag.hata
+                                    </div>
+
+                                }
+                                <div class="form-group">
+                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Giriş Yap</span></button>
+                                    Bir hesabınız Yok mu? <a href="#">Kayıt Ol</a>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <!-- End Register Form -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Register Container -->
+        <!-- Instagram Section -->
+        <!-- End Instagram Section -->
+        <!-- Main Footer -->
+
+
+    </div>
+    <!--End pagewrapper-->
+    <!--Scroll to top-->
+
+
+</body>
+</html>
+

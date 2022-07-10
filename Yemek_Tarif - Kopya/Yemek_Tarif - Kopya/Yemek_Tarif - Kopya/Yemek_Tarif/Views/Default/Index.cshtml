@@ -1,0 +1,661 @@
+﻿@model IEnumerable<Yemek_Tarif.Models.tbl_Yemekler>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/shared/_layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- Main Header-->
+        <!--End Main Header -->
+        <!-- Banner Section -->
+        <section class="banner-section">
+            <div class="banner-carousel owl-theme owl-carousel">
+
+                <!-- Slide Item -->
+                <div class="slide-item">
+
+                    <div class="image-layer" style="background-image:url(/images/main-slider/1.jpg)"></div>
+
+
+                    <div class="auto-container">
+
+                        <div class="content-box ">
+                            <div class="author-image">
+
+
+
+                                <a href="/Sabitler/YemekDetay/14"> <img src="~/images/main-slider/Adsız.jpg" alt="" /></a>
+
+
+
+                            </div>
+
+                            <h1>İlgi Çekici Bir Tarif</h1>
+                            <div class="text"><b>Konya ve Karaman yöresine özgü farklı<br /> bir tarif.<br /> Mutlaka deneyin.</b><br /><font size="3"><i>Batırık; bulgur ile yapılan bir çeşit sulu salatadır.<br /> İçindeki domates, salatalık ve bulgurdan ötürü kısırı andırır.<br /> İç Anadolu bölgesinin güneyi ve Akdeniz bölgesinde<br /> Toros dağlarına yakın bölgelerde,Karaman,Bozkır, Ermenek ile Mersin'in ilçeleri Tarsus, Erdemli, Mut, Aydıncık, Anamur, Bozyazı, Silifke ve Gülnar'da yapılır. Yapılışı bölgelere göre küçük farklılıklar gösterse de, genelde ince bulgur (düğürcük, düğü veya simit), tahin, domates çeşitli baharatlarla karıştırılır ve yoğrulur.</i></font>  </div>
+                            <ul class="post-meta">
+
+
+                                @*<li><span class="icon flaticon-clock-3"></span>6 Min</li>
+                                <li><span class="icon flaticon-business-and-finance"></span>4 People</li>*@
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide Item -->
+                <!-- Slide Item -->
+                @*<div class="slide-item">
+                    <div class="image-layer" style="background-image:url(/images/main-slider/1.jpg)"></div>
+
+                    <div class="auto-container">
+                        <div class="content-box">
+                            <div class="author-image">
+                                <img src="/images/resource/author-2.jpg" alt="" />
+                            </div>
+                            <div class="info-list clearfix">
+                                <div class="sales">Salad</div>
+                                <div class="rating">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star-half-o"></span>&ensp;
+                                    8 Review
+                                </div>
+                                Author Name
+                                <div class="author-name">
+                                    <div class="author-inner">
+                                        <div class="author-icon">
+                                            <img src="/images/resource/author-1.jpg" alt="" />
+                                        </div>
+                                        by Mahfuz Riad
+                                    </div>
+                                </div>
+                            </div>
+                            <h1>Roasted Pumpkin and <br> Beet Salad</h1>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetuer <br> adipiscing elit, sed tinciduntut laore dolore </div>
+                            <ul class="post-meta">
+                                <li><span class="icon flaticon-dish"></span>4 ingredients</li>
+                                <li><span class="icon flaticon-clock-3"></span>6 Min</li>
+                                <li><span class="icon flaticon-business-and-finance"></span>4 People</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>*@
+
+            </div>
+        </section>
+        <!--End Banner Section -->
+        <!-- Product Form Section -->
+        <!-- End Keyword Section -->
+        <!-- Categories Section-->
+        <!-- End Categories Section-->
+        <!-- Trending Section -->
+        <section class="trending-section">
+            <div class="auto-container">
+                <div class="layer-one" style="background-image: url(/images/resource/category-pattern-1.png)"></div>
+                <div class="layer-two" style="background-image: url(/images/resource/category-pattern-1.png)"></div>
+                <div class="row clearfix">
+
+                    <!-- Content Column -->
+                    <div class="content-column col-lg-7 col-md-12 col-sm-12">
+                        <div class="inner-column">
+                            <!-- Sec Title -->
+                            <div class="sec-title">
+                                <div class="title">Yöresel Bir Tarif</div>
+                                @foreach (var item in Model)
+                                {
+                                    if (item.Yemekid == 14)
+                                    {
+                                        <a href="/Sabitler/YemekDetay/14"> <h2>@item.YemekAd</h2></a>
+
+
+                                        <div class="text">@item.YemekTarif</div>
+                                    }
+
+
+                                }
+                            </div>
+                            @*<div class="bold-text">To separate the fat from the drippings with ease, try this tool from OXO ($14).</div>*@
+                        </div>
+                    </div>
+
+                    <!-- Image Column -->
+                    <div class="image-column col-lg-5 col-md-12 col-sm-12">
+                        <div class="inner-column">
+                            <div class="author-image">
+                                <br /><br /><br /><br /><br /><br /><br />
+
+                                <img src="~/images/main-slider/Adsız.jpg" alt="" />
+                                @*<div class="mints">15 Min</div>*@
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Trending Section -->
+        <!-- Popular Recipes Section -->
+        @*<section class="popular-recipes-section">
+            <div class="auto-container">
+                <!-- Sec Title -->
+                <div class="sec-title">
+                    <div class="clearfix">
+                        <div class="pull-left">
+                            <h2>Populer Recipes Posts</h2>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed tincidunt ut</div>
+                        </div>
+                        <div class="pull-right">
+                            <a href="recipes.html" class="theme-btn btn-style-one"><span class="txt">See all Post</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outer-container">
+                <div class="row clearfix">
+
+                    <!-- Recipes Block -->
+                    <div class="recipes-block col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <a href="recipes-detail.html"><img src="/images/resource/recipe-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <div class="author-image"><a href="author-details.html"><img src="/images/resource/author-3.jpg" alt="" /></a></div>
+                                <div class="category">CHICKEN</div>
+                                <h4><a href="recipes-detail.html">Pressure-Cooker Beef Short Ribs with Chutney</a></h4>
+                                <div class="text">Discover a sleighload of tasty snacks that are just right for holiday feasting.</div>
+                                <ul class="post-meta">
+                                    <li><span class="icon flaticon-dish"></span>4 ingredients</li>
+                                    <li><span class="icon flaticon-clock-3"></span>6 Min</li>
+                                    <li><span class="icon flaticon-business-and-finance"></span>4 People</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipes Block -->
+                    <div class="recipes-block col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <a href="recipes-detail.html"><img src="/images/resource/recipe-2.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <div class="author-image"><a href="author-details.html"><img src="/images/resource/author-3.jpg" alt="" /></a></div>
+                                <div class="category">FEATURED COLLECTION</div>
+                                <h4><a href="recipes-detail.html">Cold-Weather Weeknight <br> Dinners</a></h4>
+                                <div class="text">Discover a sleighload of tasty snacks that are just right for holiday feasting.</div>
+                                <ul class="post-meta">
+                                    <li><span class="icon flaticon-dish"></span>4 ingredients</li>
+                                    <li><span class="icon flaticon-clock-3"></span>6 Min</li>
+                                    <li><span class="icon flaticon-business-and-finance"></span>4 People</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipes Block -->
+                    <div class="recipes-block col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <a href="recipes-detail.html"><img src="/images/resource/recipe-3.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <div class="author-image"><a href="author-details.html"><img src="/images/resource/author-3.jpg" alt="" /></a></div>
+                                <div class="category">Dinner</div>
+                                <h4><a href="recipes-detail.html">Hamburger Steak with Onions and Gravy</a></h4>
+                                <div class="text">Discover a sleighload of tasty snacks that are just right for holiday feasting.</div>
+                                <ul class="post-meta">
+                                    <li><span class="icon flaticon-dish"></span>4 ingredients</li>
+                                    <li><span class="icon flaticon-clock-3"></span>6 Min</li>
+                                    <li><span class="icon flaticon-business-and-finance"></span>4 People</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipes Block -->
+                    <div class="recipes-block col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <a href="recipes-detail.html"><img src="/images/resource/recipe-4.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <div class="author-image"><a href="author-details.html"><img src="/images/resource/author-3.jpg" alt="" /></a></div>
+                                <div class="category">Recipe</div>
+                                <h4><a href="recipes-detail.html">Pressure-Cooker Beef Short <br> Ribs with Chutney</a></h4>
+                                <div class="text">Discover a sleighload of tasty snacks that are just right for holiday feasting.</div>
+                                <ul class="post-meta">
+                                    <li><span class="icon flaticon-dish"></span>4 ingredients</li>
+                                    <li><span class="icon flaticon-clock-3"></span>6 Min</li>
+                                    <li><span class="icon flaticon-business-and-finance"></span>4 People</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>*@
+        <!-- End Popular Recipes Section -->
+        <!-- Trending Recipes Section -->
+        @*<section class="trending-recipes-section">
+            <div class="auto-container">
+                <!-- Sec Title -->
+                <div class="sec-title">
+                    <div class="clearfix">
+                        <div class="pull-left">
+                            <h2>Trending Recipes</h2>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed tincidunt ut</div>
+                        </div>
+                        <div class="pull-right">
+                            <a href="recipes.html" class="theme-btn btn-style-one"><span class="txt">See all Post</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+
+                    <!-- Recipes Block -->
+                    <div class="recipes-block style-two col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <a href="recipes-detail.html"><img src="/images/resource/recipe-5.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <div class="author-image"><a href="author-details.html"><img src="/images/resource/author-3.jpg" alt="" /></a></div>
+                                <div class="category">CHICKEN</div>
+                                <h4><a href="recipes-detail.html">Pressure-Cooker Beef Short <br> Ribs with Chutney</a></h4>
+                                <div class="text">Discover a sleighload of tasty snacks that are just right for holiday feasting.</div>
+                                <ul class="post-meta">
+                                    <li><span class="icon flaticon-dish"></span>4 ingredients</li>
+                                    <li><span class="icon flaticon-clock-3"></span>6 Min</li>
+                                    <li><span class="icon flaticon-business-and-finance"></span>4 People</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipes Block -->
+                    <div class="recipes-block style-two col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <a href="recipes-detail.html"><img src="/images/resource/recipe-6.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <div class="author-image"><a href="author-details.html"><img src="/images/resource/author-3.jpg" alt="" /></a></div>
+                                <div class="category">CHICKEN</div>
+                                <h4><a href="recipes-detail.html">Pressure-Cooker Beef Short <br> Ribs with Chutney</a></h4>
+                                <div class="text">Discover a sleighload of tasty snacks that are just right for holiday feasting.</div>
+                                <ul class="post-meta">
+                                    <li><span class="icon flaticon-dish"></span>4 ingredients</li>
+                                    <li><span class="icon flaticon-clock-3"></span>6 Min</li>
+                                    <li><span class="icon flaticon-business-and-finance"></span>4 People</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipes Block -->
+                    <div class="recipes-block style-two col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <a href="recipes-detail.html"><img src="/images/resource/recipe-7.jpg" alt="" /></a>
+                            </div>
+                            <div class="lower-content">
+                                <div class="author-image"><a href="author-details.html"><img src="/images/resource/author-3.jpg" alt="" /></a></div>
+                                <div class="category">CHICKEN</div>
+                                <h4><a href="recipes-detail.html">Pressure-Cooker Beef Short <br> Ribs with Chutney</a></h4>
+                                <div class="text">Discover a sleighload of tasty snacks that are just right for holiday feasting.</div>
+                                <ul class="post-meta">
+                                    <li><span class="icon flaticon-dish"></span>4 ingredients</li>
+                                    <li><span class="icon flaticon-clock-3"></span>6 Min</li>
+                                    <li><span class="icon flaticon-business-and-finance"></span>4 People</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>*@
+        <!-- End Trending Recipes Section -->
+        <!-- Call To Action Section -->
+        <section class="call-to-action-section" style="background-image:url(/images/background/2.jpg)">
+           
+
+            <div class="auto-container">
+
+                <div class="row clearfix">
+                  
+
+                    <!-- Column -->
+
+
+                    <div class="column col-lg-6 col-md-12 col-sm-12">
+                        <!-- Sec Title -->
+                        <div class="sec-title light">
+                            @foreach (var item in Model)
+                            {
+                                if (item.Yemekid == 128)
+                                {
+                                    <div class="title">Yöresel bir Tarif</div>
+                                    <h2>Konya Yöresine Özgü @item.YemekAd</h2>
+                                    <div class="text">Buyrun Deneyin</div>
+                                    <a href="/Sabitler/YemekDetay/128" class="theme-btn btn-style-two"><span class="txt">Tarifle Göz Atın</span></a>
+
+                                }
+                            }
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <div class="column col-lg-6 col-md-12 col-sm-12" style="margin-left:auto;margin-right:auto;">
+                        <!-- Sec Title -->
+
+                        <div class="sec-title light">
+                            @foreach (var item in Model)
+                            {
+                                if (item.Yemekid == 129)
+                                {
+                            <div class="title">Yöresel bir Tarif</div>
+                                    <h2>Meşhur Erzurum Tatar<br /> Böreği</h2>
+
+                                    <div class="text">Buyrun Deneyin</div>
+                                    <a href="/Sabitler/YemekDetay/129" class="theme-btn btn-style-two"><span class="txt">Tarifle Göz Atın</span></a>
+
+                                }
+                            }
+
+
+                        </div>
+                    </div>
+
+                    <!-- Column -->
+
+
+                </div>
+            </div>
+        </section>
+        <!-- End Call To Action Section -->
+        <!-- Video Section -->
+        @*<section class="video-section">
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <!-- Column -->
+                    <div class="column col-lg-6 col-md-6 col-sm-12">
+                        <!--Video Box-->
+                        <div class="video-box">
+                            <div class="image">
+                                <h4>Pressure-Cooker Chicken <br> Enchilada Soup</h4>
+                                <img src="/images/resource/video-1.jpg" alt="" />
+                                <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span class="flaticon-media-play-symbol"><i class="ripple"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column -->
+
+
+                </div>
+            </div>
+        </section>*@
+        <!-- End Video Section -->
+        <!-- Entertaining Section -->
+        <!-- End Entertaining Section -->
+        <!-- Treats Section -->
+        <!-- End Treats Section -->
+        <!-- Clients Section -->
+        <section class="clients-section">
+            <div class="auto-container">
+                <div class="sponsors-outer">
+                    <!--Sponsors Carousel-->
+                    <ul class="sponsors-carousel owl-carousel owl-theme">
+                        <li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/1.png" alt=""></a></figure></li>
+                        <li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/2.png" alt=""></a></figure></li>
+                        <li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/3.png" alt=""></a></figure></li>
+                        <li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/4.png" alt=""></a></figure></li>
+                        <li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/5.png" alt=""></a></figure></li>
+                        <li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/1.png" alt=""></a></figure></li>
+                        <li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/2.png" alt=""></a></figure></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Clients Section -->
+        <!-- Subscribe Section -->
+        <!-- End Subscribe Section -->
+        <!-- Instagram Section -->
+        <section class="instagram-section">
+            <div class="auto-container">
+                <!-- Title Box -->
+
+
+            </div>
+
+            <div class="instagram-carousel owl-carousel owl-theme">
+
+                <!-- Instagram Block -->
+                <div class="instagram-block">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="/images/resource/instagram-1.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="/images/resource/instagram-1.jpg" data-fancybox="instagram" data-caption="" class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery"><span class="fa fa-search"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Block -->
+                <div class="instagram-block">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="/images/resource/instagram-2.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="/images/resource/instagram-2.jpg" data-fancybox="instagram" data-caption="" class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery"><span class="fa fa-search"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Block -->
+                <div class="instagram-block">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="/images/resource/instagram-3.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="/images/resource/instagram-3.jpg" data-fancybox="instagram" data-caption="" class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery"><span class="fa fa-search"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Block -->
+                <div class="instagram-block">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="/images/resource/instagram-4.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="/images/resource/instagram-4.jpg" data-fancybox="instagram" data-caption="" class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery"><span class="fa fa-search"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Block -->
+                <div class="instagram-block">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="/images/resource/instagram-5.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="/images/resource/instagram-5.jpg" data-fancybox="instagram" data-caption="" class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery"><span class="fa fa-search"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Block -->
+                <div class="instagram-block">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="/images/resource/instagram-6.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="/images/resource/instagram-6.jpg" data-fancybox="instagram" data-caption="" class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery"><span class="fa fa-search"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Block -->
+                <div class="instagram-block">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="/images/resource/instagram-1.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="/images/resource/instagram-1.jpg" data-fancybox="instagram" data-caption="" class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery"><span class="fa fa-search"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Block -->
+                <div class="instagram-block">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="/images/resource/instagram-2.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="/images/resource/instagram-2.jpg" data-fancybox="instagram" data-caption="" class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery"><span class="fa fa-search"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Block -->
+                <div class="instagram-block">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="/images/resource/instagram-3.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="/images/resource/instagram-3.jpg" data-fancybox="instagram" data-caption="" class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery"><span class="fa fa-search"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Block -->
+                <div class="instagram-block">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="/images/resource/instagram-4.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="/images/resource/instagram-4.jpg" data-fancybox="instagram" data-caption="" class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery"><span class="fa fa-search"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Block -->
+                <div class="instagram-block">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="/images/resource/instagram-5.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="/images/resource/instagram-5.jpg" data-fancybox="instagram" data-caption="" class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery"><span class="fa fa-search"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Block -->
+                <div class="instagram-block">
+                    <div class="inner-box">
+
+                        <figure class="image-box"><img src="/images/resource/instagram-6.jpg" alt=""></figure>
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="/images/resource/instagram-6.jpg" data-fancybox="instagram" data-caption="" class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery"><span class="fa fa-search"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End Instagram Section -->
+        <!-- Main Footer -->
+
+
+    </div>
+    <!--End pagewrapper-->
+    <!--Scroll to top-->
+
+
+</body>
+</html>
+
+
+
+
+
+

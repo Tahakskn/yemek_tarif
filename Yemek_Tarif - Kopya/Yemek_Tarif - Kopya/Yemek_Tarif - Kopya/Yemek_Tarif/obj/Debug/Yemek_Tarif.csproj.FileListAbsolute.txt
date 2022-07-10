@@ -1,0 +1,219 @@
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\Yemek_Tarif.dll.config
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\Yemek_Tarif.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\Yemek_Tarif.pdb
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\csc.exe
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\csc.exe.config
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\csc.rsp
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\csi.exe
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\csi.exe.config
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\csi.rsp
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\Microsoft.Managed.Core.targets
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.AppContext.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Collections.Immutable.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Console.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.IO.Compression.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.IO.FileSystem.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.IO.Pipes.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Reflection.Metadata.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Security.AccessControl.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Security.Claims.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Security.Principal.Windows.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.ValueTuple.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Xml.XPath.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\vbc.exe
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\vbc.exe.config
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\vbc.rsp
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\VBCSCompiler.exe
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\roslyn\VBCSCompiler.exe.config
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\Microsoft.Web.Infrastructure.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\System.Web.Helpers.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\System.Web.Mvc.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\System.Web.Razor.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\System.Web.Webpages.Deployment.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\System.Web.Webpages.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\System.Web.Webpages.Razor.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\System.Web.Razor.xml
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\System.Web.Webpages.xml
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\System.Web.Webpages.Deployment.xml
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\System.Web.Webpages.Razor.xml
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\System.Web.Helpers.xml
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\System.Web.Mvc.xml
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\obj\Debug\Yemek_Tarif.csprojAssemblyReference.cache
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\obj\Debug\Yemek_Tarif.csproj.CoreCompileInputs.cache
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\obj\Debug\Yemek_Tarif.csproj.CopyComplete
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\obj\Debug\Yemek_Tarif.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\obj\Debug\Yemek_Tarif.pdb
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\EntityFramework.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\EntityFramework.SqlServer.dll
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\EntityFramework.xml
+G:\Bitirme_Projesi\Yemek_Tarif\Yemek_Tarif\bin\EntityFramework.SqlServer.xml
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\Yemek_Tarif.dll.config
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\Yemek_Tarif.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\Yemek_Tarif.pdb
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\csc.exe
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\csc.exe.config
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\csc.rsp
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\csi.exe
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\csi.exe.config
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\csi.rsp
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.Managed.Core.targets
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.AppContext.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Collections.Immutable.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Console.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.IO.Compression.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.IO.FileSystem.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.IO.Pipes.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Reflection.Metadata.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.AccessControl.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.Claims.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.Principal.Windows.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.ValueTuple.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Xml.XPath.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\vbc.exe
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\vbc.exe.config
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\vbc.rsp
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\VBCSCompiler.exe
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\VBCSCompiler.exe.config
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\EntityFramework.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\EntityFramework.SqlServer.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\Microsoft.Web.Infrastructure.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Helpers.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Mvc.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Razor.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Webpages.Deployment.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Webpages.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Webpages.Razor.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\EntityFramework.xml
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\EntityFramework.SqlServer.xml
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Razor.xml
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Webpages.xml
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Webpages.Deployment.xml
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Webpages.Razor.xml
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Helpers.xml
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Mvc.xml
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\obj\Debug\Yemek_Tarif.csprojAssemblyReference.cache
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\obj\Debug\Yemek_Tarif.csproj.CoreCompileInputs.cache
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\obj\Debug\Yemek_Tarif.csproj.CopyComplete
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\obj\Debug\Yemek_Tarif.dll
+G:\Bitirme_Projesi\Yemek_Tarif - Kopya\Yemek_Tarif\obj\Debug\Yemek_Tarif.pdb
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\Yemek_Tarif.dll.config
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\Yemek_Tarif.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\Yemek_Tarif.pdb
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\csc.exe
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\csc.exe.config
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\csc.rsp
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\csi.exe
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\csi.exe.config
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\csi.rsp
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.AppContext.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Console.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.IO.Compression.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.IO.Pipes.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.Claims.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.ValueTuple.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Xml.XPath.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\vbc.exe
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\vbc.exe.config
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\vbc.rsp
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\VBCSCompiler.exe
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\EntityFramework.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\EntityFramework.SqlServer.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Helpers.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Mvc.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Razor.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Webpages.Deployment.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Webpages.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Webpages.Razor.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\EntityFramework.xml
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\EntityFramework.SqlServer.xml
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Razor.xml
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Webpages.xml
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Webpages.Deployment.xml
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Webpages.Razor.xml
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Helpers.xml
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\System.Web.Mvc.xml
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\obj\Debug\Yemek_Tarif.csprojAssemblyReference.cache
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\obj\Debug\Yemek_Tarif.csproj.CoreCompileInputs.cache
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\obj\Debug\Yemek_Tarif.csproj.CopyComplete
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\obj\Debug\Yemek_Tarif.dll
+C:\Users\keskin\Downloads\Yemek_Tarif - Kopya\Yemek_Tarif - Kopya\Yemek_Tarif\obj\Debug\Yemek_Tarif.pdb

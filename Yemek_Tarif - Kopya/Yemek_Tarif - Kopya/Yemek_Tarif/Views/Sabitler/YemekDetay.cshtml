@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Yemek_Tarif.Models.tbl_Yemekler>
+
+@{
+    /**/
+
+    ViewBag.Title = "YemekDetay";
+    Layout = "~/Views/shared/_layout.cshtml";
+}
+<section class="page-title" style="background-image:url(/images/background/10.jpg)">
+    <div class="auto-container">
+        <h1>Tarifler</h1>
+    </div>
+</section>
+
+@foreach (var item in Model)
+{
+    @*<div style="width: 100%;">
+        <div style="float: left; width: 30%; background-color: Red;">sol div </div>
+        <div style="float: left; width: 40%; background-color: Blue;">orta div </div>
+        <div style="float: right; width: 30%; background-color: Silver;">sağ div </div>
+    </div>*@
+    <!-- Recipes Block -->
+@*<div class="add-recipe-col" style="float:left; margin-left:15%; ">
+    <h4>Malzemeler</h4>
+    <font size="3" color="#bf0000"><i>. 1 çay kaşığı tereyağ <br /> 1 yemek kaşığı karasoğan<br /> 1 yemek kaşığı arasoğan<br /> 1 yemek kaşığı karasoğan</i></font>
+
+</div>*@
+    <div class="recipes-block col-lg-5 col-md-6 col-sm-12" style="margin-left:auto;margin-right:auto;">
+        <div class="inner-box">
+            <div class="image">
+
+
+                @*<a href="/@item.YemekResim">*@
+                @*<img src=" ~/images/@item.YemekResim"   />*@
+                @*</a>*@
+            </div>
+
+            <div class="lower-content">
+
+                @*<div class="author-image"><a href="author-details.html"><img src="/images/resource/author-3.jpg" alt=""></a></div>*@
+
+                @*<div class="category">CHICKEN</div>*@
+                <h3>@item.YemekAd</h3>
+
+
+
+                <div class="text"> @item.YemekTarif </div>
+
+                <ul class="post-meta">
+
+                    <li><span class="icon flaticon-dish"></span>@item.YemekMalzeme Tane Malzeme</li>
+                    @*<li><span class="icon flaticon-clock-3"></span>6 Min</li>
+                        <li><span class="icon flaticon-business-and-finance"></span>4 People</li>*@
+
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+}
+
+

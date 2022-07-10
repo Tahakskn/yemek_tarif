@@ -1,0 +1,65 @@
+﻿@model Yemek_Tarif.Models.tbl_Yemekler
+@{
+                /**/
+
+                ViewBag.Title = "YemekGuncelle";
+                Layout = "~/Views/shared/_layout.cshtml";
+}
+
+<section class="page-title" style="background-image:url(/images/background/10.jpg)">
+    <div class="auto-container">
+        <h1>Recipes</h1>
+    </div>
+</section>
+<section class="add-recipe-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="add-recipe-col">
+                    <h4>Tarif Güncelleme</h4>
+                    <form action="/Sabitler/YemekGuncelle" method="post">
+                        <div class="form-group mb-4">
+                            <label>Yemek Adı</label>
+                            <input type="hidden" name="ID" class="form-control" value="@Model.Yemekid" />
+                            <input type="text" class="form-control" name="YemekAd" value="@Model.YemekAd">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label>Yemek Tarif</label>
+                            <input type="text" class="form-control" name="YemekTarif" value="@Model.YemekTarif" rows="4">
+                            <label> Kategori Seçiniz...</label>
+                            
+                                @Html.DropDownListFor(m => m.tbl_Kategoriler.Kategoriid, (List<SelectListItem>)ViewBag.dgr, new { @class = "form-control" })
+                            
+
+                        </div>
+
+
+                        <div class="form-group mb-4">
+                            <label>Malzeme Miktarı</label>
+                            <input type="text" class="form-control" value="@Model.YemekMalzeme" name="YemekMalzeme">
+                        </div>
+                        
+                        <div class="row">
+
+
+                        </div>
+                        <button class="btn btn-primary theme-btn btn-style-one" type="submit"><span>Tarifi Güncelle</span></button>
+                    </form>
+                    @if (ViewBag.sonuc == 1)
+                    {
+                        <div class="alert alert-success" role="alert">
+                            Tebrikler Bir Kayıt Eklediniz.!
+                        </div>
+                    }
+                    else if (ViewBag.sonuc == 0)
+                    {
+
+                        <div class="alert alert-secondary" role="alert">
+                            Bir Sorun Var.!
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

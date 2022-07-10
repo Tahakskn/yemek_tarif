@@ -1,0 +1,105 @@
+﻿@model IEnumerable<Yemek_Tarif.Models.tbl_Yemekler>
+@{
+    ViewBag.Title = "YemekKategoriDetay";
+    Layout = "~/Views/shared/_layout.cshtml";
+}
+
+<section class="page-title" style="background-image:url(/images/background/10.jpg)">
+    <div class="auto-container">
+        <h1>Tarifler</h1>
+    </div>
+</section>
+<section class="popular-recipes-section style-three">
+    <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title">
+            <div class="clearfix">
+                <div class="pull-left">
+                    <h2>Yemek Tarifleri</h2>
+                    <div class="text">Birbirinden Lezzetli Çeşit Çeşit Bulabileceğiniz Tarifler</div>
+
+                </div>
+                @*<div class="pull-right">
+                        <a href="recipes.html" class="theme-btn btn-style-one"><span class="txt">See all Post</span></a>
+                    </div>*@
+            </div>
+        </div>
+    </div>
+    <div class="outer-container">
+        <div class="row clearfix">
+            @foreach (var item in Model)
+            {
+                <!-- Recipes Block -->
+                <div class="recipes-block col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+
+
+                            @*<a href="/@item.YemekResim">*@
+                            @*<img src=" ~/images/@item.YemekResim"   />*@
+                            @*</a>*@
+                        </div>
+
+                        <div class="lower-content">
+
+                            @*<div class="author-image"><a href="author-details.html"><img src="/images/resource/author-3.jpg" alt=""></a></div>*@
+
+                            @*<div class="category">CHICKEN</div>*@
+                            <a href="/Sabitler/YemekDetay/@item.Yemekid"><h3>@item.YemekAd</h3></a>
+
+                            @if (item.YemekTarif.Length >= 150)
+                            {
+                                @item.YemekTarif.Substring(0, item.YemekTarif.Substring(0, 150).LastIndexOf(""))
+                                <br />
+                                <a href="/Sabitler/YemekDetay/@item.Yemekid">Devamını Oku...</a>
+
+                            }
+                            else
+                            {
+                                @item.YemekTarif
+
+                            }
+                            <div class="text">
+                                @* @item.YemekTarif.Substring(0, item.YemekTarif.Substring(0, 150).LastIndexOf(""))*@
+
+
+
+
+                            </div>
+
+                            <ul class="post-meta">
+
+
+
+                                @*<li>
+                                        <span class="icon flaticon-dish"></span>@item.YemekTarif.Substring(0, 100)
+
+                                    </li>*@
+                                <li><span class="icon flaticon-dish"></span>@item.YemekMalzeme tane malzeme</li>
+                                @*<li><span class="icon flaticon-clock-3"></span>6 Min</li>
+                                    <li><span class="icon flaticon-business-and-finance"></span>4 People</li>*@
+
+
+                            </ul>
+                            @*<table>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="/Sabitler/Silme/@item.Yemekid" class="button-box">SİL</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>*@
+                            <br /> <br /> <br />
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            }
+        </div>
+    </div>
+
+</section>
+
+

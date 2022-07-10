@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ModelTables.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="tbl_GununYemegi">
+          <Key>
+            <PropertyRef Name="GununYemekid" />
+          </Key>
+          <Property Name="GununYemekid" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GununYemekad" Type="varchar" MaxLength="50" />
+          <Property Name="GununYemekMalzeme" Type="varchar" MaxLength="500" />
+          <Property Name="GununYemekTarif" Type="varchar(max)" />
+          <Property Name="GununYemekPuan" Type="tinyint" />
+          <Property Name="GununYemekTarih" Type="smalldatetime" />
+        </EntityType>
+        <EntityType Name="tbl_Kategoriler">
+          <Key>
+            <PropertyRef Name="Kategoriid" />
+          </Key>
+          <Property Name="Kategoriid" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KategoriAd" Type="varchar" MaxLength="50" />
+          <Property Name="KategoriAdet" Type="smallint" />
+          <Property Name="KategoriResim" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="tbl_kullanicilar">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KullaniciAdi" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Sifre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Adi" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Soyadi" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_Tarifler">
+          <Key>
+            <PropertyRef Name="Tarifid" />
+          </Key>
+          <Property Name="Tarifid" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TarifAd" Type="varchar" MaxLength="50" />
+          <Property Name="TarifMalzeme" Type="varchar" MaxLength="500" />
+          <Property Name="TarifYapilis" Type="varchar(max)" />
+          <Property Name="TarifResim" Type="varchar" MaxLength="50" />
+          <Property Name="TarifSahip" Type="varchar" MaxLength="50" />
+          <Property Name="TarifSahipMail" Type="varchar" MaxLength="50" />
+          <Property Name="Kisisayisi" Type="varchar" MaxLength="50" />
+          <Property Name="TarifSüre" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbl_Yemekler">
+          <Key>
+            <PropertyRef Name="Yemekid" />
+          </Key>
+          <Property Name="Yemekid" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="YemekAd" Type="varchar" MaxLength="50" />
+          <Property Name="YemekMalzeme" Type="varchar" MaxLength="500" />
+          <Property Name="YemekTarif" Type="varchar(max)" />
+          <Property Name="YemekResim" Type="varchar" MaxLength="100" />
+          <Property Name="YemekTarih" Type="smalldatetime" />
+          <Property Name="YemekPuan" Type="tinyint" />
+          <Property Name="Kategoriid" Type="smallint" />
+        </EntityType>
+        <EntityType Name="tbl_Yorumlar">
+          <Key>
+            <PropertyRef Name="Yorumid" />
+          </Key>
+          <Property Name="Yorumid" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="YorumAdSoyad" Type="varchar" MaxLength="50" />
+          <Property Name="YorumMail" Type="varchar" MaxLength="50" />
+          <Property Name="YorumTarih" Type="smalldatetime" />
+          <Property Name="YorumOnay" Type="bit" />
+          <Property Name="Yorumicerik" Type="varchar" MaxLength="500" />
+          <Property Name="Yemekid" Type="smallint" />
+        </EntityType>
+        <EntityType Name="tbl_Yönetici">
+          <Key>
+            <PropertyRef Name="Yöneticiid" />
+          </Key>
+          <Property Name="Yöneticiid" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="YöneticiAd" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="YöneticiSifre" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_tbl_Yemekler_tbl_Kategoriler">
+          <End Role="tbl_Kategoriler" Type="Self.tbl_Kategoriler" Multiplicity="0..1" />
+          <End Role="tbl_Yemekler" Type="Self.tbl_Yemekler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_Kategoriler">
+              <PropertyRef Name="Kategoriid" />
+            </Principal>
+            <Dependent Role="tbl_Yemekler">
+              <PropertyRef Name="Kategoriid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_Yorumlar_tbl_Yemekler">
+          <End Role="tbl_Yemekler" Type="Self.tbl_Yemekler" Multiplicity="0..1" />
+          <End Role="tbl_Yorumlar" Type="Self.tbl_Yorumlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_Yemekler">
+              <PropertyRef Name="Yemekid" />
+            </Principal>
+            <Dependent Role="tbl_Yorumlar">
+              <PropertyRef Name="Yemekid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModelTablesStoreContainer">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_GununYemegi" EntityType="Self.tbl_GununYemegi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Kategoriler" EntityType="Self.tbl_Kategoriler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_kullanicilar" EntityType="Self.tbl_kullanicilar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Tarifler" EntityType="Self.tbl_Tarifler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Yemekler" EntityType="Self.tbl_Yemekler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Yorumlar" EntityType="Self.tbl_Yorumlar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Yönetici" EntityType="Self.tbl_Yönetici" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_tbl_Yemekler_tbl_Kategoriler" Association="Self.FK_tbl_Yemekler_tbl_Kategoriler">
+            <End Role="tbl_Kategoriler" EntitySet="tbl_Kategoriler" />
+            <End Role="tbl_Yemekler" EntitySet="tbl_Yemekler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_Yorumlar_tbl_Yemekler" Association="Self.FK_tbl_Yorumlar_tbl_Yemekler">
+            <End Role="tbl_Yemekler" EntitySet="tbl_Yemekler" />
+            <End Role="tbl_Yorumlar" EntitySet="tbl_Yorumlar" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ModelTables" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbl_GununYemegi">
+          <Key>
+            <PropertyRef Name="GununYemekid" />
+          </Key>
+          <Property Name="GununYemekid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GununYemekad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GununYemekMalzeme" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="GununYemekTarif" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="GununYemekPuan" Type="Byte" />
+          <Property Name="GununYemekTarih" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tbl_Kategoriler">
+          <Key>
+            <PropertyRef Name="Kategoriid" />
+          </Key>
+          <Property Name="Kategoriid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KategoriAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="KategoriAdet" Type="Int16" />
+          <Property Name="KategoriResim" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tbl_Yemekler" Relationship="Self.FK_tbl_Yemekler_tbl_Kategoriler" FromRole="tbl_Kategoriler" ToRole="tbl_Yemekler" />
+        </EntityType>
+        <EntityType Name="tbl_kullanicilar">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Adi" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Soyadi" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_Tarifler">
+          <Key>
+            <PropertyRef Name="Tarifid" />
+          </Key>
+          <Property Name="Tarifid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TarifAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TarifMalzeme" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="TarifYapilis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TarifResim" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TarifSahip" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TarifSahipMail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Kisisayisi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TarifSüre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbl_Yemekler">
+          <Key>
+            <PropertyRef Name="Yemekid" />
+          </Key>
+          <Property Name="Yemekid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="YemekAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="YemekMalzeme" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="YemekTarif" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="YemekResim" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="YemekTarih" Type="DateTime" Precision="0" />
+          <Property Name="YemekPuan" Type="Byte" />
+          <Property Name="Kategoriid" Type="Int16" />
+          <NavigationProperty Name="tbl_Kategoriler" Relationship="Self.FK_tbl_Yemekler_tbl_Kategoriler" FromRole="tbl_Yemekler" ToRole="tbl_Kategoriler" />
+          <NavigationProperty Name="tbl_Yorumlar" Relationship="Self.FK_tbl_Yorumlar_tbl_Yemekler" FromRole="tbl_Yemekler" ToRole="tbl_Yorumlar" />
+        </EntityType>
+        <EntityType Name="tbl_Yorumlar">
+          <Key>
+            <PropertyRef Name="Yorumid" />
+          </Key>
+          <Property Name="Yorumid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="YorumAdSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="YorumMail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="YorumTarih" Type="DateTime" Precision="0" />
+          <Property Name="YorumOnay" Type="Boolean" />
+          <Property Name="Yorumicerik" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Yemekid" Type="Int16" />
+          <NavigationProperty Name="tbl_Yemekler" Relationship="Self.FK_tbl_Yorumlar_tbl_Yemekler" FromRole="tbl_Yorumlar" ToRole="tbl_Yemekler" />
+        </EntityType>
+        <EntityType Name="tbl_Yönetici">
+          <Key>
+            <PropertyRef Name="Yöneticiid" />
+          </Key>
+          <Property Name="Yöneticiid" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="YöneticiAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="YöneticiSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_tbl_Yemekler_tbl_Kategoriler">
+          <End Role="tbl_Kategoriler" Type="Self.tbl_Kategoriler" Multiplicity="0..1" />
+          <End Role="tbl_Yemekler" Type="Self.tbl_Yemekler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_Kategoriler">
+              <PropertyRef Name="Kategoriid" />
+            </Principal>
+            <Dependent Role="tbl_Yemekler">
+              <PropertyRef Name="Kategoriid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_Yorumlar_tbl_Yemekler">
+          <End Role="tbl_Yemekler" Type="Self.tbl_Yemekler" Multiplicity="0..1" />
+          <End Role="tbl_Yorumlar" Type="Self.tbl_Yorumlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_Yemekler">
+              <PropertyRef Name="Yemekid" />
+            </Principal>
+            <Dependent Role="tbl_Yorumlar">
+              <PropertyRef Name="Yemekid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="YemekTarifEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="tbl_GununYemegi" EntityType="Self.tbl_GununYemegi" />
+          <EntitySet Name="tbl_Kategoriler" EntityType="Self.tbl_Kategoriler" />
+          <EntitySet Name="tbl_kullanicilar" EntityType="Self.tbl_kullanicilar" />
+          <EntitySet Name="tbl_Tarifler" EntityType="Self.tbl_Tarifler" />
+          <EntitySet Name="tbl_Yemekler" EntityType="Self.tbl_Yemekler" />
+          <EntitySet Name="tbl_Yorumlar" EntityType="Self.tbl_Yorumlar" />
+          <EntitySet Name="tbl_Yönetici" EntityType="Self.tbl_Yönetici" />
+          <AssociationSet Name="FK_tbl_Yemekler_tbl_Kategoriler" Association="Self.FK_tbl_Yemekler_tbl_Kategoriler">
+            <End Role="tbl_Kategoriler" EntitySet="tbl_Kategoriler" />
+            <End Role="tbl_Yemekler" EntitySet="tbl_Yemekler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_Yorumlar_tbl_Yemekler" Association="Self.FK_tbl_Yorumlar_tbl_Yemekler">
+            <End Role="tbl_Yemekler" EntitySet="tbl_Yemekler" />
+            <End Role="tbl_Yorumlar" EntitySet="tbl_Yorumlar" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelTablesStoreContainer" CdmEntityContainer="YemekTarifEntities">
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="ModelTables.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_GununYemegi">
+            <EntityTypeMapping TypeName="ModelTables.tbl_GununYemegi">
+              <MappingFragment StoreEntitySet="tbl_GununYemegi">
+                <ScalarProperty Name="GununYemekid" ColumnName="GununYemekid" />
+                <ScalarProperty Name="GununYemekad" ColumnName="GununYemekad" />
+                <ScalarProperty Name="GununYemekMalzeme" ColumnName="GununYemekMalzeme" />
+                <ScalarProperty Name="GununYemekTarif" ColumnName="GununYemekTarif" />
+                <ScalarProperty Name="GununYemekPuan" ColumnName="GununYemekPuan" />
+                <ScalarProperty Name="GununYemekTarih" ColumnName="GununYemekTarih" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Kategoriler">
+            <EntityTypeMapping TypeName="ModelTables.tbl_Kategoriler">
+              <MappingFragment StoreEntitySet="tbl_Kategoriler">
+                <ScalarProperty Name="Kategoriid" ColumnName="Kategoriid" />
+                <ScalarProperty Name="KategoriAd" ColumnName="KategoriAd" />
+                <ScalarProperty Name="KategoriAdet" ColumnName="KategoriAdet" />
+                <ScalarProperty Name="KategoriResim" ColumnName="KategoriResim" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_kullanicilar">
+            <EntityTypeMapping TypeName="ModelTables.tbl_kullanicilar">
+              <MappingFragment StoreEntitySet="tbl_kullanicilar">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Tarifler">
+            <EntityTypeMapping TypeName="ModelTables.tbl_Tarifler">
+              <MappingFragment StoreEntitySet="tbl_Tarifler">
+                <ScalarProperty Name="Tarifid" ColumnName="Tarifid" />
+                <ScalarProperty Name="TarifAd" ColumnName="TarifAd" />
+                <ScalarProperty Name="TarifMalzeme" ColumnName="TarifMalzeme" />
+                <ScalarProperty Name="TarifYapilis" ColumnName="TarifYapilis" />
+                <ScalarProperty Name="TarifResim" ColumnName="TarifResim" />
+                <ScalarProperty Name="TarifSahip" ColumnName="TarifSahip" />
+                <ScalarProperty Name="TarifSahipMail" ColumnName="TarifSahipMail" />
+                <ScalarProperty Name="Kisisayisi" ColumnName="Kisisayisi" />
+                <ScalarProperty Name="TarifSüre" ColumnName="TarifSüre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Yemekler">
+            <EntityTypeMapping TypeName="ModelTables.tbl_Yemekler">
+              <MappingFragment StoreEntitySet="tbl_Yemekler">
+                <ScalarProperty Name="Yemekid" ColumnName="Yemekid" />
+                <ScalarProperty Name="YemekAd" ColumnName="YemekAd" />
+                <ScalarProperty Name="YemekMalzeme" ColumnName="YemekMalzeme" />
+                <ScalarProperty Name="YemekTarif" ColumnName="YemekTarif" />
+                <ScalarProperty Name="YemekResim" ColumnName="YemekResim" />
+                <ScalarProperty Name="YemekTarih" ColumnName="YemekTarih" />
+                <ScalarProperty Name="YemekPuan" ColumnName="YemekPuan" />
+                <ScalarProperty Name="Kategoriid" ColumnName="Kategoriid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Yorumlar">
+            <EntityTypeMapping TypeName="ModelTables.tbl_Yorumlar">
+              <MappingFragment StoreEntitySet="tbl_Yorumlar">
+                <ScalarProperty Name="Yorumid" ColumnName="Yorumid" />
+                <ScalarProperty Name="YorumAdSoyad" ColumnName="YorumAdSoyad" />
+                <ScalarProperty Name="YorumMail" ColumnName="YorumMail" />
+                <ScalarProperty Name="YorumTarih" ColumnName="YorumTarih" />
+                <ScalarProperty Name="YorumOnay" ColumnName="YorumOnay" />
+                <ScalarProperty Name="Yorumicerik" ColumnName="Yorumicerik" />
+                <ScalarProperty Name="Yemekid" ColumnName="Yemekid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Yönetici">
+            <EntityTypeMapping TypeName="ModelTables.tbl_Yönetici">
+              <MappingFragment StoreEntitySet="tbl_Yönetici">
+                <ScalarProperty Name="Yöneticiid" ColumnName="Yöneticiid" />
+                <ScalarProperty Name="YöneticiAd" ColumnName="YöneticiAd" />
+                <ScalarProperty Name="YöneticiSifre" ColumnName="YöneticiSifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
